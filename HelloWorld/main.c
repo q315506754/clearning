@@ -1,6 +1,7 @@
 #include <stdlib.h>
 //#include <stdio.h>
 #include "commons/commons.h"
+#include "printer.c"
 
 //
 //D:\minGW\bin\gcc main
@@ -28,6 +29,7 @@ int main() {
     int32 i32 = 33;
     printf("the i32 value is %d %s",i32,LINE_END);
 
+    system("notepad ");
     system("pause");
     return 0;
 }
