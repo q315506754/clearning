@@ -54,8 +54,20 @@ int main() {
     printf("myname2 is :%s%s", myname2,LINE_END); //%s -> %d 也不会报错
     printf("myname3 is :%s%s", myname3,LINE_END); //%s -> %d 也不会报错
     printf("myname5 is :%s%s", myname5,LINE_END); //%s -> %d 也不会报错
+    printf("myname 's address is :%o%s", myname,LINE_END); //8进制
+    printf("myname 's address is :%x%s", myname,LINE_END); //十六进制
+    printf("myname 's address is :%10x%s", myname,LINE_END); //如果输出字符不足10位的，输出10位宽度，右对齐，空的一位补空字符
 
-
+    puts("~~~~~~~~~please input:");
+    char inputChar[10];
+    gets(inputChar);
+    char aftercate[30]="your put is:";
+    strcat(aftercate,inputChar);
+//    puts(strcat("your put is:",inputChar));
+    puts(aftercate);
+//    strcpy(aftercate,"-end-end");
+    strncpy(aftercate,"-end-end",3);
+    puts(aftercate);
 //    struct test
     zhangsan.age=1;
     zhangsan.gender=2;
